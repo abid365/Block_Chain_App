@@ -95,11 +95,15 @@ const Welcome = () => {
               handleChange={() => {}}
             />
             <Input
-              placeholder={"Address to"}
-              name="addressTo"
+              placeholder={"Enter Message"}
+              name="message"
               type="text"
               handleChange={() => {}}
             />
+
+            <div className="h-[1px] w-full bg-gray-400" />
+
+            {true ? <Loader /> : <div></div>}
           </div>
         </div>
       </div>
